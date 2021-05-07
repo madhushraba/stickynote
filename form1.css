@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Parisienne&family=Varela+Round&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+   
+    background: url(download.jpg) fixed center  ;*/
+   
+  font-size: 1.4rem;
+  
+  font-family: 'Dancing Script', cursive;
+  
+}
+
+header{
+  background: linear-gradient(rgb(211, 16, 65), transparent);
+}
+
+button{
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 5px;
+  background: rgb(196, 5, 78);
+  border: 1px solid lightgray;
+}
+
+button:hover{
+  color: rgb(175, 25, 95);
+  background-color: rgba(238, 75, 170, 0.788);
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: lightseagreen;
+  box
+}
+
+.nav{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 70px;
+  
+  color: rgb(182, 4, 63);
+  padding: 15px 0;
+  justify-content: space-between;
+  background-color: transparent;
+  font-family: 'Pangolin', cursive;
+}
+
+
+.nav button{
+  outline: block;
+  color: rgb(231, 166, 188);;
+}
+
+.createBox{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -137.5px;
+  z-index: 1;
+  font-size: 1.5rem;
+  width: 275px;
+  height: 275px;
+  outline: none;
+  box-shadow: rgb(11, 81, 104);
+}
+
+.createBox textarea{
+  width: 275px;
+  height: 275px;
+  padding: 25px;
+  background-color: rgb(182, 4, 63);
+  color: rgb(221, 175, 175);
+  box-shadow: 0px 2px 4px 0px rgba(34, 13, 13, 0.9);
+  font-family: 'Varela Round', sans-serif;  
+}
+
+.notes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-top: 10px;
+}
+
+.note{
+  width:250px;
+  height:250px;
+  padding:25px;
+  transition: 2s;
+  cursor: pointer;
+  overflow-wrap: break-word;
+  box-shadow: 0px 10px 24px 0px rgba(95, 30, 30, 0.75);
+}
+
+.note h1{
+  font-size: 1.5rem;
+}
+
+@media(max-width:768px){
+  .nav{
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media(max-width:480px){
+  .createBox{
+    width: 100%;
+  }
+}
+
